@@ -53,11 +53,13 @@ function setFstDropdown() {
         }
         el.classList.add("open");
         el.parentNode.classList.add("open");
+        el.closest('.iconed').classList.add('opened');
         if(select.dataset["searchdisable"] == null && select.dataset["searchdisable"] != "true")
             el.querySelector(".fstsearchinput").focus();
     }
 
     function checkEvent(event, force) {
+
         return event.relatedTarget != null && (event.relatedTarget.tagName == "INPUT" || (event.relatedTarget.tagName == "BUTTON" && force == undefined))
             || event.target.tagName == "INPUT" && event.type != "blur"
             || event.target.tagName == "INPUT" && (event.relatedTarget != null && event.relatedTarget.className == "fstdropdown open")

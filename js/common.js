@@ -11,7 +11,7 @@
 		if('objectFit' in document.documentElement.style === false){
 		  Array.prototype.forEach.call(document.querySelectorAll('._fit'), function(el){
 
-		    var image = el.querySelector('img');
+		    var image = el.querySelector('._fit-img');
 		    el.style.backgroundImage = 'url("'+image.src+'")';
 		    el.classList.add('ibg');
 		    el.classList.remove('_fit');
@@ -141,15 +141,25 @@
 			    800: 2,
 			    1199: 3
 			  },
+			  draggable: false,
 				multipleDrag: false,
 				threshold: 20,
 				loop: true,
 				onChange: function(){
 					console.log(this.currentSlide)
 					var _self = this;
+					var calcSlide = 0;
+					
+					if (this.currentSlide < 0){
+						calcSlide = Math.abs(this.currentSlide) * 2;
+					}else{
+						calcSlide = this.currentSlide;
+					}
+					
 					var bullets = this.selector.nextElementSibling.querySelectorAll('.siema-nav-button');
+					
 					[].forEach.call(bullets, function(el, ind) {
-						if(ind === Math.abs(_self.currentSlide)){
+						if(ind === calcSlide){
 							console.log('cond true')
 							el.classList.add('active');
 						}else{
@@ -183,16 +193,22 @@
 			    1370: 4
 			  },
 				// startIndex: 0,
-				// draggable: true,
+				draggable: false,
 				multipleDrag: false,
-				threshold: 20,
+				threshold: 50,
 				loop: true,
 				onChange: function(){
-					console.log(this.currentSlide)
+					console.log('current slide in change ' + this.currentSlide)
+					var calcSlide = 0;
+					if (this.currentSlide < 0){
+						calcSlide = Math.abs(this.currentSlide) * 2;
+					}else{
+						calcSlide = this.currentSlide;
+					}
 					var _self = this;
 					var bullets = this.selector.nextElementSibling.querySelectorAll('.siema-nav-button');
 					[].forEach.call(bullets, function(el, ind) {
-						if(ind === Math.abs(_self.currentSlide)){
+						if(ind === calcSlide){
 
 							el.classList.add('active');
 						}else{
@@ -203,7 +219,7 @@
 				},
 				onInit: function(){
 					this.addPagination();
-					console.log(this)
+					// console.log(this)
 					var _self = this;
 					var bullets = this.selector.nextElementSibling.querySelectorAll('.siema-nav-button');
 					[].forEach.call(bullets, function(el, ind) {
