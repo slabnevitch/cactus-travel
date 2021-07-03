@@ -1,4 +1,15 @@
 (function() {
+	var cards = document.querySelectorAll('.blog-card__text');
+	console.log(cards.length)
+// $clamp(cards, {clamp: 2});
+	// for(var i=0; i< cards.length; i++){
+	//     $clamp(cards[i], {clamp: 2, useNativeClamp: false});
+	// }
+
+	// [].forEach.call(cards, function(el) {
+	// 	 $clamp(el, {clamp: '36px'});
+	// });
+	 // $clamp(header, {clamp: 1, useNativeClamp: false});
 	// console.log(Accordion().init)
 	// if(screen.width < 1199){
 		var accordionLists = document.querySelectorAll('.accordion');
