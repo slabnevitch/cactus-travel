@@ -1363,6 +1363,10 @@ textarea.input {
   fill: #fff;
 }
 
+.white-red-card__icon svg .path-accent {
+  fill: #FC654C;
+}
+
 .white-red-card__title {
   margin-bottom: 10px;
   font-size: 18px;
@@ -3122,10 +3126,16 @@ textarea.input {
     background-color: #fff;
   }
 
-  .white-red-card.with-hover:hover .white-red-card__icon svg,
-  .white-red-card.with-hover:active .white-red-card__icon svg,
-  .white-red-card.with-hover:focus .white-red-card__icon svg {
+  .white-red-card.with-hover:hover .white-red-card__icon svg path,
+  .white-red-card.with-hover:active .white-red-card__icon svg path,
+  .white-red-card.with-hover:focus .white-red-card__icon svg path {
     fill: #FC654C;
+  }
+
+  .white-red-card.with-hover:hover .white-red-card__icon svg .path-accent,
+  .white-red-card.with-hover:active .white-red-card__icon svg .path-accent,
+  .white-red-card.with-hover:focus .white-red-card__icon svg .path-accent {
+    fill: #fff;
   }
 
   .photo-caption-parent:hover .photo-caption,
