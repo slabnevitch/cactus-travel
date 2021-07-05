@@ -158,37 +158,11 @@
 				loop: true,
 				onChange: function(){
 					console.log(this.currentSlide)
-					var _self = this;
-					var calcSlide = 0;
-					
-					if (this.currentSlide < 0){
-						calcSlide = Math.abs(this.currentSlide) * 2;
-					}else{
-						calcSlide = this.currentSlide;
-					}
-					
-					var bullets = this.selector.nextElementSibling.querySelectorAll('.siema-nav-button');
-					
-					[].forEach.call(bullets, function(el, ind) {
-						if(ind === calcSlide){
-							console.log('cond true')
-							el.classList.add('active');
-						}else{
-							el.classList.remove('active');
-
-						}
-					});
+					siemaDots(this);
 				},
 				onInit: function(){
 					this.addPagination();
-					var _self = this;
-					var bullets = this.selector.nextElementSibling.querySelectorAll('.siema-nav-button');
-					[].forEach.call(bullets, function(el, ind) {
-						if(ind === Math.abs(_self.currentSlide)){
-							console.log('cond true')
-							el.classList.add('active');
-						}
-					});
+					siemaDots(this);
 				}
 			});
 		}
@@ -210,38 +184,35 @@
 				loop: true,
 				onChange: function(){
 					console.log('current slide in change ' + this.currentSlide)
-					var calcSlide = 0;
-					if (this.currentSlide < 0){
-						calcSlide = Math.abs(this.currentSlide) * 2;
-					}else{
-						calcSlide = this.currentSlide;
-					}
-					var _self = this;
-					var bullets = this.selector.nextElementSibling.querySelectorAll('.siema-nav-button');
-					[].forEach.call(bullets, function(el, ind) {
-						if(ind === calcSlide){
-
-							el.classList.add('active');
-						}else{
-							el.classList.remove('active');
-
-						}
-					});
+					siemaDots(this);
 				},
 				onInit: function(){
 					this.addPagination();
 					// console.log(this)
-					var _self = this;
-					var bullets = this.selector.nextElementSibling.querySelectorAll('.siema-nav-button');
-					[].forEach.call(bullets, function(el, ind) {
-
-						if(ind === Math.abs(_self.currentSlide)){
-							console.log('cond true')
-							el.classList.add('active');
-						}
-					});
+					// var _self = this;
+					siemaDots(this);
 				}
 			});
+
+		}
+		function siemaDots(slider) {
+			var calcSlide = 0;
+				if (this.currentSlide < 0){
+					calcSlide = Math.abs(slider.currentSlide) * 2;
+				}else{
+					calcSlide = slider.currentSlide;
+				}
+				var _self = slider;
+				var bullets = slider.selector.nextElementSibling.querySelectorAll('.siema-nav-button');
+				[].forEach.call(bullets, function(el, ind) {
+					if(ind === calcSlide){
+
+						el.classList.add('active');
+					}else{
+						el.classList.remove('active');
+
+					}
+				});
 		}
 
 	// END siema dslider
