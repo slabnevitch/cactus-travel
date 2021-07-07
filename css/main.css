@@ -1585,6 +1585,8 @@ textarea.input {
 }
 
 .header__top {
+  position: relative;
+  z-index: 3;
   height: 79px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1594,7 +1596,6 @@ textarea.input {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: -1px;
 }
 
 .header__bottom {
@@ -1724,8 +1725,6 @@ textarea.input {
 }
 
 .header__callback {
-  position: relative;
-  z-index: 3;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
