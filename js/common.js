@@ -1,16 +1,27 @@
 (function() {
-	var cards = document.querySelectorAll('.blog-card__text');
-	console.log(cards.length)
-// $clamp(cards, {clamp: 2});
-	// for(var i=0; i< cards.length; i++){
-	//     $clamp(cards[i], {clamp: 2, useNativeClamp: false});
-	// }
+	  /*--------------------------
+      INIT WIDTH SCROLL
+  --------------------------*/
+  var scrollWidth = {
+    init: function () {
+      var div = document.createElement('div');
 
-	// [].forEach.call(cards, function(el) {
-	// 	 $clamp(el, {clamp: '36px'});
-	// });
-	 // $clamp(header, {clamp: 1, useNativeClamp: false});
-	// console.log(Accordion().init)
+      div.style.overflowY = 'scroll';
+      div.style.width = '50px';
+      div.style.height = '50px';
+
+      document.body.append(div);
+
+      var scrollWidth = div.offsetWidth - div.clientWidth;
+
+      div.remove();
+
+     	var root = document.documentElement;
+      root.style.setProperty('--scroll-width', scrollWidth + 'px');
+    }
+  };
+
+  scrollWidth.init();
 	// if(screen.width < 1199){
 		var accordionLists = document.querySelectorAll('.accordion');
 		[].forEach.call(accordionLists , function(item){
@@ -31,14 +42,14 @@
 	// End ibg class
 	
 	// backdrop-filter fallback
-		if('backdrop-filter' in document.documentElement.style === false){
-			console.log('fall!');
-			[].forEach.call(document.querySelectorAll('.blur'), function(el){
+		// if('backdrop-filter' in document.documentElement.style === false){
+		// 	console.log('fall!');
+		// 	[].forEach.call(document.querySelectorAll('.blur'), function(el){
 
-		    el.classList.add('blur-fallback');
-		    el.classList.remove('blur');
- 		 });
-		}
+		//     el.classList.add('blur-fallback');
+		//     el.classList.remove('blur');
+ 	// 	 });
+		// }
 	
 	// END backdrop-filter fallback
 
@@ -134,7 +145,13 @@
 		  disableScroll: true, 
 		  disableFocus: true, 
 		  awaitOpenAnimation: true,
-		  awaitCloseAnimation: true 
+		  // awaitCloseAnimation: true,
+		  onShow: function() {
+		  	document.querySelector('#wrapper-for-scroll-fix').classList.add('modal-open');
+		  },
+		  onClose: function() {
+		  	document.querySelector('#wrapper-for-scroll-fix').classList.remove('modal-open');
+		  }
 		});
 
 	// END modal

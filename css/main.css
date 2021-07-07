@@ -676,6 +676,7 @@ body {
 
 html {
   font-size: 18px;
+  --scroll-width: 0px;
 }
 
 body {
@@ -688,6 +689,14 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   color: #262626;
+}
+
+#wrapper-for-scroll-fix {
+  overflow: hidden;
+}
+
+#wrapper-for-scroll-fix.modal-open {
+  padding-right: var(--scroll-width);
 }
 
 .main {
@@ -857,10 +866,7 @@ textarea.input {
 .blur {
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
-}
-
-.blur-fallback {
-  background-color: rgba(255, 255, 255, 0.3);
+  background: rgba(153, 153, 153, 0.3);
 }
 
 .false-check-label {
@@ -1718,6 +1724,8 @@ textarea.input {
 }
 
 .header__callback {
+  position: relative;
+  z-index: 3;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3066,10 +3074,6 @@ textarea.input {
 /* Medium Devices, Desktops */
 
 /* Large Devices, Wide Screens */
-
-.webp .subscribe .wrapper.fl {
-  background-image: url(../img/bg_subscribe_form.webp);
-}
 
 /*# sourceMappingURL=maps/main.css.map */
 

@@ -9,107 +9,189 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <nav id="menu" class="mob-nav"></nav>
-    <main id="panel" class="main">
-      <header class="header">
-        <div class="wrapper header__top">
-          <div class="header__left">
-            <div class="toggle-mnu"><span></span></div><a href="#" class="logo">
-              <picture>
-                <source srcset="img/logo.webp" type="image/webp"><img src="img/logo.jpg" alt="alt">
-              </picture></a>
-          </div>
-          <div class="header__right">
-            <ul data-da="mob-nav,992,last" class="menu-mini">
-              <li class="menu-mini__item"><a href="" class="menu-mini__link">О нас</a></li>
-              <li class="menu-mini__item"><a href="" class="menu-mini__link">Блог</a></li>
-              <li class="menu-mini__item"><a href="" class="menu-mini__link">Контакты</a></li>
-            </ul>
-            <div data-custom-open="modal-callback" class="header__callback">		
-                  <svg class="icon icon-phone ">
-                    <use xlink:href="img/icons-svg/symbol/sprite.svg#phone"></use>
-                  </svg><span>Перезвоните мне</span>
+    <div id="wrapper-for-scroll-fix">
+      <nav id="menu" class="mob-nav"></nav>
+      <main id="panel" class="main">
+        <header class="header">
+          <div class="wrapper header__top">
+            <div class="header__left">
+              <div class="toggle-mnu"><span></span></div><a href="#" class="logo">
+                <picture>
+                  <source srcset="img/logo.webp" type="image/webp"><img src="img/logo.jpg" alt="alt">
+                </picture></a>
             </div>
-          </div>
-        </div>
-        <div class="header__bottom">
-          <div class="header__blur blur"></div>
-          <div class="wrapper">
-            <div class="header__line left"></div>
-            <div class="header__line right"></div>
-            <ul data-da="mob-nav,1199,0" data-accordion class="main-menu accordion">
-              <li class="main-menu__item"><a href="" class="main-menu__link">Пошук турiв</a></li>
-              <li class="main-menu__item"><a href="" class="main-menu__link">Гарячi тури</a></li>
-              <li class="main-menu__item with-sub accordion__item"><a href="" class="main-menu__link accordion__link">Типи турiв
-                      <svg class="icon icon-arrow-dropdown ">
-                        <use xlink:href="img/icons-svg/symbol/sprite.svg#arrow-dropdown"></use>
-                      </svg></a>
-                <ul class="main-submenu accordion__content blur">
-                  <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Пошук турів</a></li>
-                  <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Авіаквитки</a></li>
-                  <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Візова підтримка</a></li>
-                  <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Страхування</a></li>
-                  <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Освіта за кордоном</a></li>
-                  <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">TravelSiM</a></li>
-                </ul>
-              </li>
-              <li class="main-menu__item with-sub accordion__item"><a href="" class="main-menu__link accordion__link">Країни
-                      <svg class="icon icon-arrow-dropdown ">
-                        <use xlink:href="img/icons-svg/symbol/sprite.svg#arrow-dropdown"></use>
-                      </svg></a>
-                <ul class="main-submenu accordion__content blur">
-                  <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Пошук турів</a></li>
-                  <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Авіаквитки</a></li>
-                  <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Візова підтримка</a></li>
-                  <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Страхування</a></li>
-                  <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Освіта за кордоном</a></li>
-                  <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">TravelSiM</a></li>
-                </ul>
-              </li>
-              <li class="main-menu__item with-sub accordion__item"><a href="" class="main-menu__link accordion__link">Послуги
-                      <svg class="icon icon-arrow-dropdown ">
-                        <use xlink:href="img/icons-svg/symbol/sprite.svg#arrow-dropdown"></use>
-                      </svg></a>
-                <ul class="main-submenu accordion__content blur">
-                  <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Пошук турів</a></li>
-                  <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Авіаквитки</a></li>
-                  <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Візова підтримка</a></li>
-                  <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Страхування</a></li>
-                  <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Освіта за кордоном</a></li>
-                  <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">TravelSiM</a></li>
-                </ul>
-              </li>
-            </ul>
-            <div class="header-bottom-rigth">
-              <div data-custom-open="modal-login" data-da="header__right,1199,last" class="header__login">
-                    <svg class="icon icon-login ">
-                      <use xlink:href="img/icons-svg/symbol/sprite.svg#login"></use>
-                    </svg><span>Log in</span>
+            <div class="header__right">
+              <ul data-da="mob-nav,992,last" class="menu-mini">
+                <li class="menu-mini__item"><a href="" class="menu-mini__link">О нас</a></li>
+                <li class="menu-mini__item"><a href="" class="menu-mini__link">Блог</a></li>
+                <li class="menu-mini__item"><a href="" class="menu-mini__link">Контакты</a></li>
+              </ul>
+              <div data-custom-open="modal-callback" class="header__callback">		
+                    <svg class="icon icon-phone ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#phone"></use>
+                    </svg><span>Перезвоните мне</span>
               </div>
             </div>
           </div>
-        </div>
-      </header>
-      <main class="main-content">
-        <div class="main-visual main-visual--short _fit"><img data-src="img/bg_contacts.jpg" alt="alt" class="_fit-img lazyload">
-        </div>
-        <section class="page-sect no-down-pd contacts">
-          <div class="wrapper">
-            <h1 class="accent">Контакты</h1>
-          </div>
-          <div class="wrapper fl">
-            <div class="contacts__col">
-              <div class="contacts__block">
-                <div class="contacts-rows">
-                  <div class="contacts-row"><a href="tel:0443345555">
-                          <svg class="icon icon-phone ">
-                            <use xlink:href="img/icons-svg/symbol/sprite.svg#phone"></use>
-                          </svg>044-334-55-55</a></div>
-                  <div class="contacts-row"><a href="mailto:travel@c.ua">
-                          <svg class="icon icon-message ">
-                            <use xlink:href="img/icons-svg/symbol/sprite.svg#message"></use>
-                          </svg>travel@c.ua</a></div>
+          <div class="header__bottom">
+            <div class="header__blur blur"></div>
+            <div class="wrapper">
+              <div class="header__line left"></div>
+              <div class="header__line right"></div>
+              <ul data-da="mob-nav,1199,0" data-accordion class="main-menu accordion">
+                <li class="main-menu__item"><a href="" class="main-menu__link">Пошук турiв</a></li>
+                <li class="main-menu__item"><a href="" class="main-menu__link">Гарячi тури</a></li>
+                <li class="main-menu__item with-sub accordion__item"><a href="" class="main-menu__link accordion__link">Типи турiв
+                        <svg class="icon icon-arrow-dropdown ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#arrow-dropdown"></use>
+                        </svg></a>
+                  <ul class="main-submenu accordion__content blur">
+                    <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Пошук турів</a></li>
+                    <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Авіаквитки</a></li>
+                    <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Візова підтримка</a></li>
+                    <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Страхування</a></li>
+                    <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Освіта за кордоном</a></li>
+                    <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">TravelSiM</a></li>
+                  </ul>
+                </li>
+                <li class="main-menu__item with-sub accordion__item"><a href="" class="main-menu__link accordion__link">Країни
+                        <svg class="icon icon-arrow-dropdown ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#arrow-dropdown"></use>
+                        </svg></a>
+                  <ul class="main-submenu accordion__content blur">
+                    <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Пошук турів</a></li>
+                    <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Авіаквитки</a></li>
+                    <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Візова підтримка</a></li>
+                    <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Страхування</a></li>
+                    <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Освіта за кордоном</a></li>
+                    <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">TravelSiM</a></li>
+                  </ul>
+                </li>
+                <li class="main-menu__item with-sub accordion__item"><a href="" class="main-menu__link accordion__link">Послуги
+                        <svg class="icon icon-arrow-dropdown ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#arrow-dropdown"></use>
+                        </svg></a>
+                  <ul class="main-submenu accordion__content blur">
+                    <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Пошук турів</a></li>
+                    <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Авіаквитки</a></li>
+                    <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Візова підтримка</a></li>
+                    <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Страхування</a></li>
+                    <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">Освіта за кордоном</a></li>
+                    <li class="main-submenu__item"><a href="https://translate.google.ru/?hl=ru&amp;sl=ru&amp;tl=en&amp;text=%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D0%B5%D0%BE%D0%BD&amp;op=translate" class="main-submenu__link">TravelSiM</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="header-bottom-rigth">
+                <div data-custom-open="modal-login" data-da="header__right,1199,last" class="header__login">
+                      <svg class="icon icon-login ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#login"></use>
+                      </svg><span>Log in</span>
                 </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="main-content">
+          <div class="main-visual main-visual--short _fit"><picture><source srcset="img/bg_contacts.webp" type="image/webp"><img data-src="img/bg_contacts.jpg" alt="alt" class="_fit-img lazyload"></picture>
+          </div>
+          <section class="page-sect no-down-pd contacts">
+            <div class="wrapper">
+              <h1 class="accent">Контакты</h1>
+            </div>
+            <div class="wrapper fl">
+              <div class="contacts__col">
+                <div class="contacts__block">
+                  <div class="contacts-rows">
+                    <div class="contacts-row"><a href="tel:0443345555">
+                            <svg class="icon icon-phone ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#phone"></use>
+                            </svg>044-334-55-55</a></div>
+                    <div class="contacts-row"><a href="mailto:travel@c.ua">
+                            <svg class="icon icon-message ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#message"></use>
+                            </svg>travel@c.ua</a></div>
+                  </div>
+                  <ul class="socials">
+                    <li class="socials__item"><a href="" class="socials__link">
+                            <svg class="icon icon-facebook ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#facebook"></use>
+                            </svg></a></li>
+                    <li class="socials__item"><a href="" class="socials__link">
+                            <svg class="icon icon-insta ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#insta"></use>
+                            </svg></a></li>
+                    <li class="socials__item"><a href="" class="socials__link">
+                            <svg class="icon icon-yout ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#yout"></use>
+                            </svg></a></li>
+                  </ul>
+                </div>
+                <div class="contacts__block">
+                  <h2 class="accent">Пiдберемо тур для Вас</h2>
+                  <form class="cactus-form">
+                    <div class="cactus-form__row">
+                      <div class="cactus-form__block iconed">
+                            <svg class="icon icon-pencil ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#pencil"></use>
+                            </svg>
+                        <input type="text" placeholder="Имя">
+                      </div>
+                      <div class="cactus-form__block iconed input-marked">
+                            <svg class="icon icon-pencil ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#pencil"></use>
+                            </svg>
+                        <input type="text" placeholder="+380632542869">
+                      </div>
+                    </div>
+                    <div class="cactus-form__row iconed">
+                          <svg class="icon icon-pencil ">
+                            <use xlink:href="img/icons-svg/symbol/sprite.svg#pencil"></use>
+                          </svg>
+                      <input type="text" placeholder="Email">
+                    </div>
+                    <div class="cactus-form__row">
+                      <textarea placeholder="Ваши пожелания"></textarea>
+                    </div>
+                    <div class="cactus-form__row">
+                      <button class="button button-fill button-width">Найти</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="contacts__col">
+                <h3 class="accent">Время роботы</h3>
+                <div class="contacts-row contacts-row--shedule">
+                      <svg class="icon icon-clock ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#clock"></use>
+                      </svg>
+                  <div>	Пн - Вс  10:00 - 22:00</div>
+                </div>
+                <h3 class="accent">Адреса</h3>
+                <div class="contacts-row">
+                      <svg class="icon icon-location ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#location"></use>
+                      </svg>м.Харків, вул. Пушкінська 31
+                </div>
+                <div class="contacts__map">
+                  <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.9170065214944!2d36.22809431519946!3d49.99416542801841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDU5JzM5LjAiTiAzNsKwMTMnNDkuMCJF!5e0!3m2!1sru!2sru!4v1624990334643!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" width="auto" height="360" class="lazyload"></iframe>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="footer">
+          <div class="wrapper">
+            <div class="footer__inner">
+              <div class="footer__column">
+                <ul class="menu-mini">
+                  <li class="menu-mini__item"><a href="" class="menu-mini__link">О нас</a></li>
+                  <li class="menu-mini__item"><a href="" class="menu-mini__link">Блог</a></li>
+                  <li class="menu-mini__item"><a href="" class="menu-mini__link">Контакты</a></li>
+                </ul><a href="#" class="logo">
+                  <picture>
+                    <source srcset="img/logo-footer.webp" type="image/webp"><img src="img/logo-footer.jpg" alt="alt">
+                  </picture></a>
+                <div data-custom-open="modal-callback" class="button button-fill button-width">Залишити заявку</div>
                 <ul class="socials">
                   <li class="socials__item"><a href="" class="socials__link">
                           <svg class="icon icon-facebook ">
@@ -125,483 +207,364 @@
                           </svg></a></li>
                 </ul>
               </div>
-              <div class="contacts__block">
-                <h2 class="accent">Пiдберемо тур для Вас</h2>
-                <form class="cactus-form">
+              <div class="footer__column column-footer">
+                <div class="column-footer__title">Типи турiв</div>
+                <ul class="footer__menu menu-footer">
+                  <li class="menu-footer__item"><a href="#" class="menu-footer__link">Екскурсійні тури</a></li>
+                  <li class="menu-footer__item"><a href="#" class="menu-footer__link">Гірськолижні тури</a></li>
+                  <li class="menu-footer__item"><a href="#" class="menu-footer__link">Iндивідуальні тури</a></li>
+                  <li class="menu-footer__item"><a href="#" class="menu-footer__link">Гастро-тури</a></li>
+                  <li class="menu-footer__item"><a href="#" class="menu-footer__link">Весільні тури</a></li>
+                  <li class="menu-footer__item"><a href="#" class="menu-footer__link">Круїзи</a></li>
+                </ul>
+              </div>
+              <div class="footer__column column-footer">
+                <div class="column-footer__title">Країни</div>
+                <ul class="footer__menu menu-footer">
+                  <li class="menu-footer__item"><a href="#" class="menu-footer__link">Єгипет</a></li>
+                  <li class="menu-footer__item"><a href="#" class="menu-footer__link">Туреччина</a></li>
+                  <li class="menu-footer__item"><a href="#" class="menu-footer__link">Таїланд</a></li>
+                  <li class="menu-footer__item"><a href="#" class="menu-footer__link">ОАЕ</a></li>
+                  <li class="menu-footer__item"><a href="#" class="menu-footer__link">Мальдіви</a></li>
+                  <li class="menu-footer__item"><a href="#" class="menu-footer__link">Шрі Ланка</a></li>
+                  <li class="menu-footer__item"><a href="#" class="menu-footer__link">Домінікана</a></li>
+                </ul>
+              </div>
+              <div class="footer__column column-footer">
+                <div class="column-footer__title">Контакти</div>
+                <div class="contacts-rows">
+                  <div class="contacts-row"><a href="tel:0443345555">
+                          <svg class="icon icon-phone ">
+                            <use xlink:href="img/icons-svg/symbol/sprite.svg#phone"></use>
+                          </svg>044-334-55-55</a></div>
+                  <div class="contacts-row"><a href="mailto:travel@c.ua">
+                          <svg class="icon icon-message ">
+                            <use xlink:href="img/icons-svg/symbol/sprite.svg#message"></use>
+                          </svg>travel@c.ua</a></div>
+                  <div class="contacts-row contacts-row--shedule">
+                        <svg class="icon icon-clock ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#clock"></use>
+                        </svg>
+                    <div>	Пн - Сб  09:00 - 22:00</div>
+                    <div>Вс  09:00 - 22:00</div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__column column-footer">
+                <div class="column-footer__title">Адреса</div>
+                <div class="contacts-row">
+                      <svg class="icon icon-location ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#location"></use>
+                      </svg>м.Харків, вул. Пушкінська 31
+                </div>
+                <div class="footer__map">
+                  <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.9170065214944!2d36.22809431519946!3d49.99416542801841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDU5JzM5LjAiTiAzNsKwMTMnNDkuMCJF!5e0!3m2!1sru!2sru!4v1624990334643!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" width="auto" height="190" class="lazyload"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div id="modal-callback" aria-hidden="true" class="callback-modal modal micromodal-slide">
+          <div tabindex="-1" data-custom-close class="modal__overlay">
+            <div role="dialog" aria-modal="true" aria-labelledby="modal-callback" class="modal__container">
+              <div class="mainmodal__content">
+                <form class="cactus-form modal-form">
+                  <div class="cactus-form__row input-airplane iconed">
+                    <select data-searchdisable="true" class="fstdropdown-select">
+                      <option value="">Куда</option>
+                      <option value="Австралія">Австралія</option>
+                      <option value="Австрія">Австрія</option>
+                      <option value="Азербайджан">Азербайджан</option>
+                      <option value="Албанія">Албанія</option>
+                      <option value="Алжир">Алжир</option>
+                      <option value="Андорра">Андорра</option>
+                      <option value="Антарктика">Антарктика</option>
+                      <option value="Антигуа">Антигуа</option>
+                      <option value="Аргентина">Аргентина</option>
+                      <option value="Вірменія">Вірменія</option>
+                      <option value="Аруба">Аруба</option>
+                      <option value="Афганістан">Афганістан</option>
+                      <option value="Багами">Багами</option>
+                      <option value="Бангладеш">Бангладеш</option>
+                      <option value="Барбадос">Барбадос</option>
+                      <option value="Бахрейн">Бахрейн</option>
+                      <option value="Білорусь">Білорусь</option>
+                      <option value="Беліз">Беліз</option>
+                      <option value="Бельгія">Бельгія</option>
+                      <option value="Бенін">Бенін</option>
+                      <option value="Бермудські острови">Бермудські острови</option>
+                      <option value="Болгарія">Болгарія</option>
+                      <option value="Болівія">Болівія</option>
+                      <option value="Боснія і Герцеговина">Боснія і Герцеговина</option>
+                      <option value="Ботсвана">Ботсвана</option>
+                      <option value="Бразилія">Бразилія</option>
+                      <option value="Бруней">Бруней</option>
+                      <option value="Бутан">Бутан</option>
+                      <option value="Ватикан">Ватикан</option>
+                      <option value="Великобританія">Великобританія</option>
+                      <option value="Угорщина">Угорщина</option>
+                      <option value="Венесуела">Венесуела</option>
+                      <option value="В'єтнам">В'єтнам</option>
+                      <option value="Гаїті">Гаїті</option>
+                      <option value="Гватемала">Гватемала</option>
+                      <option value="Гвінея">Гвінея</option>
+                      <option value="Німеччина">Німеччина</option>
+                      <option value="Гібралтар">Гібралтар</option>
+                      <option value="Гондурас">Гондурас</option>
+                      <option value="Гонконг">Гонконг</option>
+                      <option value="Гренада">Гренада</option>
+                      <option value="Греція">Греція</option>
+                      <option value="Грузія">Грузія</option>
+                      <option value="Данія">Данія</option>
+                      <option value="Джібуті">Джібуті</option>
+                      <option value="Домініка">Домініка</option>
+                      <option value="Домінікана">Домінікана</option>
+                      <option value="Єгипет">Єгипет</option>
+                      <option value="Замбія">Замбія</option>
+                      <option value="Зімбабве">Зімбабве</option>
+                      <option value="Ізраїль">Ізраїль</option>
+                      <option value="Індія">Індія</option>
+                      <option value="Індонезія">Індонезія</option>
+                      <option value="Йорданія">Йорданія</option>
+                      <option value="Іран">Іран</option>
+                      <option value="Ірландія">Ірландія</option>
+                      <option value="Ісландія">Ісландія</option>
+                      <option value="Іспанія">Іспанія</option>
+                      <option value="Італія">Італія</option>
+                      <option value="Ємен">Ємен</option>
+                      <option value="Кабо-Верде">Кабо-Верде</option>
+                      <option value="Казахстан">Казахстан</option>
+                      <option value="Камбоджа">Камбоджа</option>
+                      <option value="Камерун">Камерун</option>
+                      <option value="Канада">Канада</option>
+                      <option value="Кенія">Кенія</option>
+                      <option value="Кіпр">Кіпр</option>
+                      <option value="Киргизія">Киргизія</option>
+                      <option value="Китай">Китай</option>
+                      <option value="Колумбія">Колумбія</option>
+                      <option value="Конго">Конго</option>
+                      <option value="Коста Ріка">Коста Ріка</option>
+                      <option value="Крим">Крим</option>
+                      <option value="Куба">Куба</option>
+                      <option value="Кувейт">Кувейт</option>
+                      <option value="Лаос">Лаос</option>
+                      <option value="Латвія">Латвія</option>
+                      <option value="Ліберія">Ліберія</option>
+                      <option value="Ліван">Ліван</option>
+                      <option value="Литва">Литва</option>
+                      <option value="Ліхтенштейн">Ліхтенштейн</option>
+                      <option value="Люксембург">Люксембург</option>
+                      <option value="Маврикій">Маврикій</option>
+                      <option value="Мавританія">Мавританія</option>
+                      <option value="Мадагаскар">Мадагаскар</option>
+                      <option value="Македонія">Македонія</option>
+                      <option value="Малайзія">Малайзія</option>
+                      <option value="Мальдіви">Мальдіви</option>
+                      <option value="Мальта">Мальта</option>
+                      <option value="Марокко">Марокко</option>
+                      <option value="Мексика">Мексика</option>
+                      <option value="Мозамбік">Мозамбік</option>
+                      <option value="Молдова">Молдова</option>
+                      <option value="Монако">Монако</option>
+                      <option value="Монголія">Монголія</option>
+                      <option value="М'янма">М'янма</option>
+                      <option value="Намібія">Намібія</option>
+                      <option value="Непал">Непал</option>
+                      <option value="Нігер">Нігер</option>
+                      <option value="Нігерія">Нігерія</option>
+                      <option value="Нідерланди">Нідерланди</option>
+                      <option value="Нікарагуа">Нікарагуа</option>
+                      <option value="Нова Зеландія">Нова Зеландія</option>
+                      <option value="Норвегія">Норвегія</option>
+                      <option value="ОАЕ">ОАЕ</option>
+                      <option value="Оман">Оман</option>
+                      <option value="Пакистан">Пакистан</option>
+                      <option value="Панама">Панама</option>
+                      <option value="Папуа-Нова Гвінея">Папуа-Нова Гвінея</option>
+                      <option value="Парагвай">Парагвай</option>
+                      <option value="Перу">Перу</option>
+                      <option value="Польща">Польща</option>
+                      <option value="Португалія">Португалія</option>
+                      <option value="Пуерто-Ріко">Пуерто-Ріко</option>
+                      <option value="Росія">Росія</option>
+                      <option value="Руанда">Руанда</option>
+                      <option value="Румунія">Румунія</option>
+                      <option value="Сан Марино">Сан Марино</option>
+                      <option value="Саудівська Аравія">Саудівська Аравія</option>
+                      <option value="Північна Корея">Північна Корея</option>
+                      <option value="Сейшельські о-ва">Сейшельські о-ва</option>
+                      <option value="Сенегал">Сенегал</option>
+                      <option value="Сент-Люсія">Сент-Люсія</option>
+                      <option value="Сербія">Сербія</option>
+                      <option value="Сінгапур">Сінгапур</option>
+                      <option value="Сирія">Сирія</option>
+                      <option value="Словаччина">Словаччина</option>
+                      <option value="Словенія">Словенія</option>
+                      <option value="Сомалі">Сомалі</option>
+                      <option value="США">США</option>
+                      <option value="Таджикистан">Таджикистан</option>
+                      <option value="Таїланд">Таїланд</option>
+                      <option value="Тайвань">Тайвань</option>
+                      <option value="Танзанія">Танзанія</option>
+                      <option value="Тибет">Тибет</option>
+                      <option value="Трінідад і Тобаго">Трінідад і Тобаго</option>
+                      <option value="Туніс">Туніс</option>
+                      <option value="Туркменістан">Туркменістан</option>
+                      <option value="Туреччина">Туреччина</option>
+                      <option value="Уганда">Уганда</option>
+                      <option value="Узбекистан">Узбекистан</option>
+                      <option value="Україна">Україна</option>
+                      <option value="Україна - Карпати">Україна - Карпати</option>
+                      <option value="Уругвай">Уругвай</option>
+                      <option value="Фіджі">Фіджі</option>
+                      <option value="Філіппіни">Філіппіни</option>
+                      <option value="Фінляндія">Фінляндія</option>
+                      <option value="Франція">Франція</option>
+                      <option value="Французька Полінезія">Французька Полінезія</option>
+                      <option value="Хорватія">Хорватія</option>
+                      <option value="Чад">Чад</option>
+                      <option value="Чорногорія">Чорногорія</option>
+                      <option value="Чехія">Чехія</option>
+                      <option value="Чилі">Чилі</option>
+                      <option value="Швейцарія">Швейцарія</option>
+                      <option value="Швеція">Швеція</option>
+                      <option value="Шрі Ланка">Шрі Ланка</option>
+                      <option value="Еквадор">Еквадор</option>
+                      <option value="Естонія">Естонія</option>
+                      <option value="Ефіопія">Ефіопія</option>
+                      <option value="ПАР">ПАР</option>
+                      <option value="Південна Корея">Південна Корея</option>
+                      <option value="Ямайка">Ямайка</option>
+                      <option value="Японія">Японія</option>
+                    </select>
+                  </div>
                   <div class="cactus-form__row">
-                    <div class="cactus-form__block iconed">
-                          <svg class="icon icon-pencil ">
-                            <use xlink:href="img/icons-svg/symbol/sprite.svg#pencil"></use>
-                          </svg>
-                      <input type="text" placeholder="Имя">
+                    <div class="cactus-form__block input-adults iconed">
+                      <select name="adult" aria-invalid="false" data-searchdisable="true" class="fstdropdown-select wpcf7-form-control wpcf7-select">
+                        <option value="">Взрослых</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
                     </div>
-                    <div class="cactus-form__block iconed input-marked">
-                          <svg class="icon icon-pencil ">
-                            <use xlink:href="img/icons-svg/symbol/sprite.svg#pencil"></use>
-                          </svg>
-                      <input type="text" placeholder="+380632542869">
+                    <div class="cactus-form__block input-children iconed">
+                      <select name="kids" aria-invalid="false" data-searchdisable="true" class="fstdropdown-select wpcf7-form-control wpcf7-select">
+                        <option value="">Детей</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
                     </div>
                   </div>
-                  <div class="cactus-form__row iconed">
-                        <svg class="icon icon-pencil ">
-                          <use xlink:href="img/icons-svg/symbol/sprite.svg#pencil"></use>
-                        </svg>
+                  <div class="cactus-form__row">
+                    <div class="cactus-form__block iconed">
+                          <svg class="icon icon-calendar-clock ">
+                            <use xlink:href="img/icons-svg/symbol/sprite.svg#calendar-clock"></use>
+                          </svg>
+                      <input type="text" placeholder="Выезд" class="date-time">
+                    </div>
+                    <div class="cactus-form__block input-days iconed">
+                      <select name="duration" aria-invalid="false" data-searchdisable="true" class="fstdropdown-select wpcf7-form-control wpcf7-select">
+                        <option value="">Дней</option>
+                        <option value="2-4 дні">2-4 дні</option>
+                        <option value="3-5 днів">3-5 днів</option>
+                        <option value="4-6 днів">4-6 днів</option>
+                        <option value="5-7 днів">5-7 днів</option>
+                        <option value="6-8 днів">6-8 днів</option>
+                        <option value="7-9 днів">7-9 днів</option>
+                        <option value="8-10 днів">8-10 днів</option>
+                        <option value="9-11 днів">9-11 днів</option>
+                        <option value="10-12 днів">10-12 днів</option>
+                        <option value="11-13 днів">11-13 днів</option>
+                        <option value="12-14 днів">12-14 днів</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="cactus-form__row">
+                    <input type="text" placeholder="Имя">
+                  </div>
+                  <div class="cactus-form__row">
                     <input type="text" placeholder="Email">
                   </div>
                   <div class="cactus-form__row">
-                    <textarea placeholder="Ваши пожелания"></textarea>
+                    <input type="text" placeholder="Телефон">
                   </div>
                   <div class="cactus-form__row">
-                    <button class="button button-fill button-width">Найти</button>
+                    <textarea placeholder="Комментарий"></textarea>
+                  </div>
+                  <div class="cactus-form__row">
+                    <div class="cactus-form__block">
+                      <div data-sitekey="6Le8urcZAAAAAKQ2NSUUtJ_ZiniCt7PtH9FcGcVD" data-size="compact" class="wpcf7-form-control g-recaptcha wpcf7-recaptcha">
+                        <div style="width: 304px; height: 78px;">
+                          <div>
+                            <iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6Le8urcZAAAAAKQ2NSUUtJ_ZiniCt7PtH9FcGcVD&amp;co=aHR0cHM6Ly90ZXN0dHJhdmVsLmMudWE6NDQz&amp;hl=uk&amp;v=eKRIyK-9MtX6JxeZcNZIkfUq&amp;size=normal&amp;cb=ujkhw38i1ktt" role="presentation" name="a-wpdl7axa7v27" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="304" height="78" frameborder="0"></iframe>
+                          </div>
+                          <textarea id="g-recaptcha-response" name="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;" class="g-recaptcha-response"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cactus-form__block">
+                      <button class="button button-fill cactus-form__send">
+                            <svg class="icon icon-send ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#send"></use>
+                            </svg>Отправить
+                      </button>
+                    </div>
                   </div>
                 </form>
               </div>
             </div>
-            <div class="contacts__col">
-              <h3 class="accent">Время роботы</h3>
-              <div class="contacts-row contacts-row--shedule">
-                    <svg class="icon icon-clock ">
-                      <use xlink:href="img/icons-svg/symbol/sprite.svg#clock"></use>
-                    </svg>
-                <div>	Пн - Вс  10:00 - 22:00</div>
-              </div>
-              <h3 class="accent">Адреса</h3>
-              <div class="contacts-row">
-                    <svg class="icon icon-location ">
-                      <use xlink:href="img/icons-svg/symbol/sprite.svg#location"></use>
-                    </svg>м.Харків, вул. Пушкінська 31
-              </div>
-              <div class="contacts__map">
-                <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.9170065214944!2d36.22809431519946!3d49.99416542801841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDU5JzM5LjAiTiAzNsKwMTMnNDkuMCJF!5e0!3m2!1sru!2sru!4v1624990334643!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" width="auto" height="360" class="lazyload"></iframe>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="wrapper">
-          <div class="footer__inner">
-            <div class="footer__column">
-              <ul class="menu-mini">
-                <li class="menu-mini__item"><a href="" class="menu-mini__link">О нас</a></li>
-                <li class="menu-mini__item"><a href="" class="menu-mini__link">Блог</a></li>
-                <li class="menu-mini__item"><a href="" class="menu-mini__link">Контакты</a></li>
-              </ul><a href="#" class="logo">
-                <picture>
-                  <source srcset="img/logo-footer.webp" type="image/webp"><img src="img/logo-footer.jpg" alt="alt">
-                </picture></a>
-              <div data-custom-open="modal-callback" class="button button-fill button-width">Залишити заявку</div>
-              <ul class="socials">
-                <li class="socials__item"><a href="" class="socials__link">
-                        <svg class="icon icon-facebook ">
-                          <use xlink:href="img/icons-svg/symbol/sprite.svg#facebook"></use>
-                        </svg></a></li>
-                <li class="socials__item"><a href="" class="socials__link">
-                        <svg class="icon icon-insta ">
-                          <use xlink:href="img/icons-svg/symbol/sprite.svg#insta"></use>
-                        </svg></a></li>
-                <li class="socials__item"><a href="" class="socials__link">
-                        <svg class="icon icon-yout ">
-                          <use xlink:href="img/icons-svg/symbol/sprite.svg#yout"></use>
-                        </svg></a></li>
-              </ul>
-            </div>
-            <div class="footer__column column-footer">
-              <div class="column-footer__title">Типи турiв</div>
-              <ul class="footer__menu menu-footer">
-                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Екскурсійні тури</a></li>
-                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Гірськолижні тури</a></li>
-                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Iндивідуальні тури</a></li>
-                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Гастро-тури</a></li>
-                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Весільні тури</a></li>
-                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Круїзи</a></li>
-              </ul>
-            </div>
-            <div class="footer__column column-footer">
-              <div class="column-footer__title">Країни</div>
-              <ul class="footer__menu menu-footer">
-                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Єгипет</a></li>
-                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Туреччина</a></li>
-                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Таїланд</a></li>
-                <li class="menu-footer__item"><a href="#" class="menu-footer__link">ОАЕ</a></li>
-                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Мальдіви</a></li>
-                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Шрі Ланка</a></li>
-                <li class="menu-footer__item"><a href="#" class="menu-footer__link">Домінікана</a></li>
-              </ul>
-            </div>
-            <div class="footer__column column-footer">
-              <div class="column-footer__title">Контакти</div>
-              <div class="contacts-rows">
-                <div class="contacts-row"><a href="tel:0443345555">
-                        <svg class="icon icon-phone ">
-                          <use xlink:href="img/icons-svg/symbol/sprite.svg#phone"></use>
-                        </svg>044-334-55-55</a></div>
-                <div class="contacts-row"><a href="mailto:travel@c.ua">
-                        <svg class="icon icon-message ">
-                          <use xlink:href="img/icons-svg/symbol/sprite.svg#message"></use>
-                        </svg>travel@c.ua</a></div>
-                <div class="contacts-row contacts-row--shedule">
-                      <svg class="icon icon-clock ">
-                        <use xlink:href="img/icons-svg/symbol/sprite.svg#clock"></use>
-                      </svg>
-                  <div>	Пн - Сб  09:00 - 22:00</div>
-                  <div>Вс  09:00 - 22:00</div>
-                </div>
-              </div>
-            </div>
-            <div class="footer__column column-footer">
-              <div class="column-footer__title">Адреса</div>
-              <div class="contacts-row">
-                    <svg class="icon icon-location ">
-                      <use xlink:href="img/icons-svg/symbol/sprite.svg#location"></use>
-                    </svg>м.Харків, вул. Пушкінська 31
-              </div>
-              <div class="footer__map">
-                <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.9170065214944!2d36.22809431519946!3d49.99416542801841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDU5JzM5LjAiTiAzNsKwMTMnNDkuMCJF!5e0!3m2!1sru!2sru!4v1624990334643!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" width="auto" height="190" class="lazyload"></iframe>
-              </div>
-            </div>
           </div>
         </div>
-      </footer>
-      <div id="modal-callback" aria-hidden="true" class="callback-modal modal micromodal-slide">
-        <div tabindex="-1" data-custom-close class="modal__overlay">
-          <div role="dialog" aria-modal="true" aria-labelledby="modal-callback" class="modal__container">
-            <div class="mainmodal__content">
-              <form class="cactus-form modal-form">
-                <div class="cactus-form__row input-airplane iconed">
-                  <select data-searchdisable="true" class="fstdropdown-select">
-                    <option value="">Куда</option>
-                    <option value="Австралія">Австралія</option>
-                    <option value="Австрія">Австрія</option>
-                    <option value="Азербайджан">Азербайджан</option>
-                    <option value="Албанія">Албанія</option>
-                    <option value="Алжир">Алжир</option>
-                    <option value="Андорра">Андорра</option>
-                    <option value="Антарктика">Антарктика</option>
-                    <option value="Антигуа">Антигуа</option>
-                    <option value="Аргентина">Аргентина</option>
-                    <option value="Вірменія">Вірменія</option>
-                    <option value="Аруба">Аруба</option>
-                    <option value="Афганістан">Афганістан</option>
-                    <option value="Багами">Багами</option>
-                    <option value="Бангладеш">Бангладеш</option>
-                    <option value="Барбадос">Барбадос</option>
-                    <option value="Бахрейн">Бахрейн</option>
-                    <option value="Білорусь">Білорусь</option>
-                    <option value="Беліз">Беліз</option>
-                    <option value="Бельгія">Бельгія</option>
-                    <option value="Бенін">Бенін</option>
-                    <option value="Бермудські острови">Бермудські острови</option>
-                    <option value="Болгарія">Болгарія</option>
-                    <option value="Болівія">Болівія</option>
-                    <option value="Боснія і Герцеговина">Боснія і Герцеговина</option>
-                    <option value="Ботсвана">Ботсвана</option>
-                    <option value="Бразилія">Бразилія</option>
-                    <option value="Бруней">Бруней</option>
-                    <option value="Бутан">Бутан</option>
-                    <option value="Ватикан">Ватикан</option>
-                    <option value="Великобританія">Великобританія</option>
-                    <option value="Угорщина">Угорщина</option>
-                    <option value="Венесуела">Венесуела</option>
-                    <option value="В'єтнам">В'єтнам</option>
-                    <option value="Гаїті">Гаїті</option>
-                    <option value="Гватемала">Гватемала</option>
-                    <option value="Гвінея">Гвінея</option>
-                    <option value="Німеччина">Німеччина</option>
-                    <option value="Гібралтар">Гібралтар</option>
-                    <option value="Гондурас">Гондурас</option>
-                    <option value="Гонконг">Гонконг</option>
-                    <option value="Гренада">Гренада</option>
-                    <option value="Греція">Греція</option>
-                    <option value="Грузія">Грузія</option>
-                    <option value="Данія">Данія</option>
-                    <option value="Джібуті">Джібуті</option>
-                    <option value="Домініка">Домініка</option>
-                    <option value="Домінікана">Домінікана</option>
-                    <option value="Єгипет">Єгипет</option>
-                    <option value="Замбія">Замбія</option>
-                    <option value="Зімбабве">Зімбабве</option>
-                    <option value="Ізраїль">Ізраїль</option>
-                    <option value="Індія">Індія</option>
-                    <option value="Індонезія">Індонезія</option>
-                    <option value="Йорданія">Йорданія</option>
-                    <option value="Іран">Іран</option>
-                    <option value="Ірландія">Ірландія</option>
-                    <option value="Ісландія">Ісландія</option>
-                    <option value="Іспанія">Іспанія</option>
-                    <option value="Італія">Італія</option>
-                    <option value="Ємен">Ємен</option>
-                    <option value="Кабо-Верде">Кабо-Верде</option>
-                    <option value="Казахстан">Казахстан</option>
-                    <option value="Камбоджа">Камбоджа</option>
-                    <option value="Камерун">Камерун</option>
-                    <option value="Канада">Канада</option>
-                    <option value="Кенія">Кенія</option>
-                    <option value="Кіпр">Кіпр</option>
-                    <option value="Киргизія">Киргизія</option>
-                    <option value="Китай">Китай</option>
-                    <option value="Колумбія">Колумбія</option>
-                    <option value="Конго">Конго</option>
-                    <option value="Коста Ріка">Коста Ріка</option>
-                    <option value="Крим">Крим</option>
-                    <option value="Куба">Куба</option>
-                    <option value="Кувейт">Кувейт</option>
-                    <option value="Лаос">Лаос</option>
-                    <option value="Латвія">Латвія</option>
-                    <option value="Ліберія">Ліберія</option>
-                    <option value="Ліван">Ліван</option>
-                    <option value="Литва">Литва</option>
-                    <option value="Ліхтенштейн">Ліхтенштейн</option>
-                    <option value="Люксембург">Люксембург</option>
-                    <option value="Маврикій">Маврикій</option>
-                    <option value="Мавританія">Мавританія</option>
-                    <option value="Мадагаскар">Мадагаскар</option>
-                    <option value="Македонія">Македонія</option>
-                    <option value="Малайзія">Малайзія</option>
-                    <option value="Мальдіви">Мальдіви</option>
-                    <option value="Мальта">Мальта</option>
-                    <option value="Марокко">Марокко</option>
-                    <option value="Мексика">Мексика</option>
-                    <option value="Мозамбік">Мозамбік</option>
-                    <option value="Молдова">Молдова</option>
-                    <option value="Монако">Монако</option>
-                    <option value="Монголія">Монголія</option>
-                    <option value="М'янма">М'янма</option>
-                    <option value="Намібія">Намібія</option>
-                    <option value="Непал">Непал</option>
-                    <option value="Нігер">Нігер</option>
-                    <option value="Нігерія">Нігерія</option>
-                    <option value="Нідерланди">Нідерланди</option>
-                    <option value="Нікарагуа">Нікарагуа</option>
-                    <option value="Нова Зеландія">Нова Зеландія</option>
-                    <option value="Норвегія">Норвегія</option>
-                    <option value="ОАЕ">ОАЕ</option>
-                    <option value="Оман">Оман</option>
-                    <option value="Пакистан">Пакистан</option>
-                    <option value="Панама">Панама</option>
-                    <option value="Папуа-Нова Гвінея">Папуа-Нова Гвінея</option>
-                    <option value="Парагвай">Парагвай</option>
-                    <option value="Перу">Перу</option>
-                    <option value="Польща">Польща</option>
-                    <option value="Португалія">Португалія</option>
-                    <option value="Пуерто-Ріко">Пуерто-Ріко</option>
-                    <option value="Росія">Росія</option>
-                    <option value="Руанда">Руанда</option>
-                    <option value="Румунія">Румунія</option>
-                    <option value="Сан Марино">Сан Марино</option>
-                    <option value="Саудівська Аравія">Саудівська Аравія</option>
-                    <option value="Північна Корея">Північна Корея</option>
-                    <option value="Сейшельські о-ва">Сейшельські о-ва</option>
-                    <option value="Сенегал">Сенегал</option>
-                    <option value="Сент-Люсія">Сент-Люсія</option>
-                    <option value="Сербія">Сербія</option>
-                    <option value="Сінгапур">Сінгапур</option>
-                    <option value="Сирія">Сирія</option>
-                    <option value="Словаччина">Словаччина</option>
-                    <option value="Словенія">Словенія</option>
-                    <option value="Сомалі">Сомалі</option>
-                    <option value="США">США</option>
-                    <option value="Таджикистан">Таджикистан</option>
-                    <option value="Таїланд">Таїланд</option>
-                    <option value="Тайвань">Тайвань</option>
-                    <option value="Танзанія">Танзанія</option>
-                    <option value="Тибет">Тибет</option>
-                    <option value="Трінідад і Тобаго">Трінідад і Тобаго</option>
-                    <option value="Туніс">Туніс</option>
-                    <option value="Туркменістан">Туркменістан</option>
-                    <option value="Туреччина">Туреччина</option>
-                    <option value="Уганда">Уганда</option>
-                    <option value="Узбекистан">Узбекистан</option>
-                    <option value="Україна">Україна</option>
-                    <option value="Україна - Карпати">Україна - Карпати</option>
-                    <option value="Уругвай">Уругвай</option>
-                    <option value="Фіджі">Фіджі</option>
-                    <option value="Філіппіни">Філіппіни</option>
-                    <option value="Фінляндія">Фінляндія</option>
-                    <option value="Франція">Франція</option>
-                    <option value="Французька Полінезія">Французька Полінезія</option>
-                    <option value="Хорватія">Хорватія</option>
-                    <option value="Чад">Чад</option>
-                    <option value="Чорногорія">Чорногорія</option>
-                    <option value="Чехія">Чехія</option>
-                    <option value="Чилі">Чилі</option>
-                    <option value="Швейцарія">Швейцарія</option>
-                    <option value="Швеція">Швеція</option>
-                    <option value="Шрі Ланка">Шрі Ланка</option>
-                    <option value="Еквадор">Еквадор</option>
-                    <option value="Естонія">Естонія</option>
-                    <option value="Ефіопія">Ефіопія</option>
-                    <option value="ПАР">ПАР</option>
-                    <option value="Південна Корея">Південна Корея</option>
-                    <option value="Ямайка">Ямайка</option>
-                    <option value="Японія">Японія</option>
-                  </select>
-                </div>
-                <div class="cactus-form__row">
-                  <div class="cactus-form__block input-adults iconed">
-                    <select name="adult" aria-invalid="false" data-searchdisable="true" class="fstdropdown-select wpcf7-form-control wpcf7-select">
-                      <option value="">Взрослых</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                    </select>
-                  </div>
-                  <div class="cactus-form__block input-children iconed">
-                    <select name="kids" aria-invalid="false" data-searchdisable="true" class="fstdropdown-select wpcf7-form-control wpcf7-select">
-                      <option value="">Детей</option>
-                      <option value="0">0</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="cactus-form__row">
-                  <div class="cactus-form__block iconed">
-                        <svg class="icon icon-calendar-clock ">
-                          <use xlink:href="img/icons-svg/symbol/sprite.svg#calendar-clock"></use>
-                        </svg>
-                    <input type="text" placeholder="Выезд" class="date-time">
-                  </div>
-                  <div class="cactus-form__block input-days iconed">
-                    <select name="duration" aria-invalid="false" data-searchdisable="true" class="fstdropdown-select wpcf7-form-control wpcf7-select">
-                      <option value="">Дней</option>
-                      <option value="2-4 дні">2-4 дні</option>
-                      <option value="3-5 днів">3-5 днів</option>
-                      <option value="4-6 днів">4-6 днів</option>
-                      <option value="5-7 днів">5-7 днів</option>
-                      <option value="6-8 днів">6-8 днів</option>
-                      <option value="7-9 днів">7-9 днів</option>
-                      <option value="8-10 днів">8-10 днів</option>
-                      <option value="9-11 днів">9-11 днів</option>
-                      <option value="10-12 днів">10-12 днів</option>
-                      <option value="11-13 днів">11-13 днів</option>
-                      <option value="12-14 днів">12-14 днів</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="cactus-form__row">
-                  <input type="text" placeholder="Имя">
-                </div>
-                <div class="cactus-form__row">
-                  <input type="text" placeholder="Email">
-                </div>
-                <div class="cactus-form__row">
-                  <input type="text" placeholder="Телефон">
-                </div>
-                <div class="cactus-form__row">
-                  <textarea placeholder="Комментарий"></textarea>
-                </div>
-                <div class="cactus-form__row">
-                  <div class="cactus-form__block">
-                    <div data-sitekey="6Le8urcZAAAAAKQ2NSUUtJ_ZiniCt7PtH9FcGcVD" data-size="compact" class="wpcf7-form-control g-recaptcha wpcf7-recaptcha">
-                      <div style="width: 304px; height: 78px;">
-                        <div>
-                          <iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6Le8urcZAAAAAKQ2NSUUtJ_ZiniCt7PtH9FcGcVD&amp;co=aHR0cHM6Ly90ZXN0dHJhdmVsLmMudWE6NDQz&amp;hl=uk&amp;v=eKRIyK-9MtX6JxeZcNZIkfUq&amp;size=normal&amp;cb=ujkhw38i1ktt" role="presentation" name="a-wpdl7axa7v27" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="304" height="78" frameborder="0"></iframe>
-                        </div>
-                        <textarea id="g-recaptcha-response" name="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;" class="g-recaptcha-response"></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="cactus-form__block">
-                    <button class="button button-fill cactus-form__send">
-                          <svg class="icon icon-send ">
-                            <use xlink:href="img/icons-svg/symbol/sprite.svg#send"></use>
-                          </svg>Отправить
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="modal-login" aria-hidden="true" class="login-modal modal micromodal-slide">
-        <div tabindex="-1" data-custom-close class="modal__overlay">
-          <div role="dialog" aria-modal="true" aria-labelledby="modal-login" class="modal__container">
-            <div class="mainmodal__content">
-              <input type="radio" id="login-tab-1" name="tab-radio" checked class="false-checkbox">
-              <label for="login-tab-1" class="login-tab">Регистрация</label>
-              <input type="radio" id="login-tab-2" name="tab-radio" class="false-checkbox">
-              <label for="login-tab-2" class="login-tab">Войти</label>
-              <form id="login-tab-signup" class="cactus-form modal-form login-tab-content">
-                <div class="login-tab-content__caption">Продолжить через</div>
-                <div class="cactus-form__row">
-                  <div class="cactus-form__block"><a href="" class="button button-blue">Facebook</a></div>
-                  <div class="cactus-form__block"><a href="" class="button button-white button-google"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></a></div>
-                </div>
-                <div class="login-tab-content__caption lined"><span>или</span></div>
-                <div class="cactus-form__row">
-                  <div class="cactus-form__block">
-                    <label class="radio-button">
-                      <input type="radio" name="status" checked>
-                      <div class="button button-empty">
-                            <svg class="icon icon-person ">
-                              <use xlink:href="img/icons-svg/symbol/sprite.svg#person"></use>
-                            </svg>Клиент
-                      </div>
-                    </label>
-                  </div>
-                  <div class="cactus-form__block">
-                    <label class="radio-button">
-                      <input type="radio" name="status">
-                      <div class="button button-empty">
-                            <svg class="icon icon-case ">
-                              <use xlink:href="img/icons-svg/symbol/sprite.svg#case"></use>
-                            </svg>Владелец
-                      </div>
-                    </label>
-                  </div>
-                </div>
-                <div class="cactus-form__row">
-                  <div class="cactus-form__block">
-                    <input type="text" placeholder="Имя">
-                  </div>
-                  <div class="cactus-form__block">
-                    <input type="text" placeholder="Фамилия">
-                  </div>
-                </div>
-                <div class="cactus-form__row">
-                  <input type="email" placeholder="Email">
-                </div>
-                <div class="cactus-form__row cactus-form__row--password">
-                  <div class="eye-ico">
-                        <svg class="icon icon-eye-hide ">
-                          <use xlink:href="img/icons-svg/symbol/sprite.svg#eye-hide"></use>
-                        </svg>
-                        <svg class="icon icon-eye-show ">
-                          <use xlink:href="img/icons-svg/symbol/sprite.svg#eye-show"></use>
-                        </svg>
-                  </div>
-                  <input type="password" placeholder="Пароль">
-                </div>
-                <div class="cactus-form__row cactus-form__row--terms">
-                  <label class="false-check-label">
-                    <input type="checkbox" required><span class="false-check">
-                          <svg class="icon icon-check ">
-                            <use xlink:href="img/icons-svg/symbol/sprite.svg#check"></use>
-                          </svg></span>
-                  </label><span class="terms">Accept the <a href="">Terms</a> and <a href="">Privacy Policy</a></span>
-                </div>
-                <div class="cactus-form__row">
-                  <button class="button button-fill">
-                        <svg class="icon icon-person-add ">
-                          <use xlink:href="img/icons-svg/symbol/sprite.svg#person-add"></use>
-                        </svg>Зарегистрироваться
-                  </button>
-                </div>
-              </form>
-              <form id="login-tab-signin" class="cactus-form modal-form login-tab-content">
-                <div data-target="forget-pass-back" class="cactus-form__content">
+        <div id="modal-login" aria-hidden="true" class="login-modal modal micromodal-slide">
+          <div tabindex="-1" data-custom-close class="modal__overlay">
+            <div role="dialog" aria-modal="true" aria-labelledby="modal-login" class="modal__container">
+              <div class="mainmodal__content">
+                <input type="radio" id="login-tab-1" name="tab-radio" checked class="false-checkbox">
+                <label for="login-tab-1" class="login-tab">Регистрация</label>
+                <input type="radio" id="login-tab-2" name="tab-radio" class="false-checkbox">
+                <label for="login-tab-2" class="login-tab">Войти</label>
+                <form id="login-tab-signup" class="cactus-form modal-form login-tab-content">
                   <div class="login-tab-content__caption">Продолжить через</div>
                   <div class="cactus-form__row">
                     <div class="cactus-form__block"><a href="" class="button button-blue">Facebook</a></div>
                     <div class="cactus-form__block"><a href="" class="button button-white button-google"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></a></div>
                   </div>
                   <div class="login-tab-content__caption lined"><span>или</span></div>
+                  <div class="cactus-form__row">
+                    <div class="cactus-form__block">
+                      <label class="radio-button">
+                        <input type="radio" name="status" checked>
+                        <div class="button button-empty">
+                              <svg class="icon icon-person ">
+                                <use xlink:href="img/icons-svg/symbol/sprite.svg#person"></use>
+                              </svg>Клиент
+                        </div>
+                      </label>
+                    </div>
+                    <div class="cactus-form__block">
+                      <label class="radio-button">
+                        <input type="radio" name="status">
+                        <div class="button button-empty">
+                              <svg class="icon icon-case ">
+                                <use xlink:href="img/icons-svg/symbol/sprite.svg#case"></use>
+                              </svg>Владелец
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="cactus-form__row">
+                    <div class="cactus-form__block">
+                      <input type="text" placeholder="Имя">
+                    </div>
+                    <div class="cactus-form__block">
+                      <input type="text" placeholder="Фамилия">
+                    </div>
+                  </div>
                   <div class="cactus-form__row">
                     <input type="email" placeholder="Email">
                   </div>
@@ -617,54 +580,93 @@
                     <input type="password" placeholder="Пароль">
                   </div>
                   <div class="cactus-form__row cactus-form__row--terms">
-                    <label class="false-check-label"></label><span class="terms">Забыли пароль? <a href="" id="forget-pass-enter" class="forget-password-handling">Восстановить пароль.</a></span>
+                    <label class="false-check-label">
+                      <input type="checkbox" required><span class="false-check">
+                            <svg class="icon icon-check ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#check"></use>
+                            </svg></span>
+                    </label><span class="terms">Accept the <a href="">Terms</a> and <a href="">Privacy Policy</a></span>
                   </div>
                   <div class="cactus-form__row">
                     <button class="button button-fill">
-                          <svg class="icon icon-login ">
-                            <use xlink:href="img/icons-svg/symbol/sprite.svg#login"></use>
-                          </svg>Войти
+                          <svg class="icon icon-person-add ">
+                            <use xlink:href="img/icons-svg/symbol/sprite.svg#person-add"></use>
+                          </svg>Зарегистрироваться
                     </button>
                   </div>
-                </div>
-                <div data-target="forget-pass-enter" class="cactus-form__content hidden">
-                  <div class="login-tab-content__caption">Продолжить через</div>
-                  <div class="cactus-form__row">
-                    <div class="cactus-form__block"><a href="" class="button button-blue">Facebook</a></div>
-                    <div class="cactus-form__block"><a href="" class="button button-white button-google"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></a></div>
-                  </div>
-                  <div class="login-tab-content__caption lined"><span>или</span></div>
-                  <div class="cactus-form__row">
-                    <input type="email" placeholder="Enter your username or email">
-                  </div>
-                  <div class="cactus-form__row">
-                    <div class="cactus-form__block"><span id="forget-pass-back" class="button button-empty forget-password-handling">
-                            <svg class="icon icon-back ">
-                              <use xlink:href="img/icons-svg/symbol/sprite.svg#back"></use>
-                            </svg>Назад</span></div>
-                    <div class="cactus-form__block">
+                </form>
+                <form id="login-tab-signin" class="cactus-form modal-form login-tab-content">
+                  <div data-target="forget-pass-back" class="cactus-form__content">
+                    <div class="login-tab-content__caption">Продолжить через</div>
+                    <div class="cactus-form__row">
+                      <div class="cactus-form__block"><a href="" class="button button-blue">Facebook</a></div>
+                      <div class="cactus-form__block"><a href="" class="button button-white button-google"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></a></div>
+                    </div>
+                    <div class="login-tab-content__caption lined"><span>или</span></div>
+                    <div class="cactus-form__row">
+                      <input type="email" placeholder="Email">
+                    </div>
+                    <div class="cactus-form__row cactus-form__row--password">
+                      <div class="eye-ico">
+                            <svg class="icon icon-eye-hide ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#eye-hide"></use>
+                            </svg>
+                            <svg class="icon icon-eye-show ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#eye-show"></use>
+                            </svg>
+                      </div>
+                      <input type="password" placeholder="Пароль">
+                    </div>
+                    <div class="cactus-form__row cactus-form__row--terms">
+                      <label class="false-check-label"></label><span class="terms">Забыли пароль? <a href="" id="forget-pass-enter" class="forget-password-handling">Восстановить пароль.</a></span>
+                    </div>
+                    <div class="cactus-form__row">
                       <button class="button button-fill">
-                            <svg class="icon icon-unlock ">
-                              <use xlink:href="img/icons-svg/symbol/sprite.svg#unlock"></use>
-                            </svg>Восстановить
+                            <svg class="icon icon-login ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#login"></use>
+                            </svg>Войти
                       </button>
                     </div>
                   </div>
-                </div>
-              </form>
+                  <div data-target="forget-pass-enter" class="cactus-form__content hidden">
+                    <div class="login-tab-content__caption">Продолжить через</div>
+                    <div class="cactus-form__row">
+                      <div class="cactus-form__block"><a href="" class="button button-blue">Facebook</a></div>
+                      <div class="cactus-form__block"><a href="" class="button button-white button-google"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></a></div>
+                    </div>
+                    <div class="login-tab-content__caption lined"><span>или</span></div>
+                    <div class="cactus-form__row">
+                      <input type="email" placeholder="Enter your username or email">
+                    </div>
+                    <div class="cactus-form__row">
+                      <div class="cactus-form__block"><span id="forget-pass-back" class="button button-empty forget-password-handling">
+                              <svg class="icon icon-back ">
+                                <use xlink:href="img/icons-svg/symbol/sprite.svg#back"></use>
+                              </svg>Назад</span></div>
+                      <div class="cactus-form__block">
+                        <button class="button button-fill">
+                              <svg class="icon icon-unlock ">
+                                <use xlink:href="img/icons-svg/symbol/sprite.svg#unlock"></use>
+                              </svg>Восстановить
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Здесь пишем код-->
-    </main>
-    <script src="js/libs/lazysizes/lazysizes.min.js"></script>
-    <script type="text/javascript" src="js/libs/svg4everybody/svg4everybody.min.js" async onload="svg4everybody();"></script>
-    <script src="js/libs/slideout/slideout.js"></script>
-    <script src="js/libs/micromodal/micromodal.js"></script>
-    <script src="js/libs/fstdropdown/fstdropdown.min.js"></script>
-    <script src="js/libs/dynamic-adaptive/da.min.js"></script>
-    <script src="js/libs/accordion/vanilla-accordion.js"></script>
-    <script src="js/common.js"></script>
+        <!-- Здесь пишем код-->
+      </main>
+      <script src="js/libs/lazysizes/lazysizes.min.js"></script>
+      <script type="text/javascript" src="js/libs/svg4everybody/svg4everybody.min.js" async onload="svg4everybody();"></script>
+      <script src="js/libs/slideout/slideout.js"></script>
+      <script src="js/libs/micromodal/micromodal.js"></script>
+      <script src="js/libs/fstdropdown/fstdropdown.min.js"></script>
+      <script src="js/libs/dynamic-adaptive/da.min.js"></script>
+      <script src="js/libs/accordion/vanilla-accordion.js"></script>
+      <script src="js/common.js"></script>
+    </div>
   </body>
 </html>
