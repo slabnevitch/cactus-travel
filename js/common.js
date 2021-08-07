@@ -40,23 +40,6 @@
  		 });
 		}
 	// End ibg class
-	
-	// backdrop-filter fallback
-		// if('backdrop-filter' in document.documentElement.style === false){
-		// 	console.log('fall!');
-		// 	[].forEach.call(document.querySelectorAll('.blur'), function(el){
-
-		//     el.classList.add('blur-fallback');
-		//     el.classList.remove('blur');
- 	// 	 });
-		// }
-	
-	// END backdrop-filter fallback
-
-	document.addEventListener('DOMContentLoaded', () => {
-		
-	});
-
 
 	// main menu hover
 		if(document.querySelector('.main-menu') !== null){
@@ -91,7 +74,6 @@
 				}
 			}
 			function linksOut(e) {
-				// console.log('out');
 				if(screen.width >= 1199){
 					lineLeft.removeAttribute('style');
 					lineRight.removeAttribute('style');
@@ -169,12 +151,11 @@
 			    800: 2,
 			    1199: 3
 			  },
-			  draggable: false,
+			  draggable: true,
 				multipleDrag: false,
 				threshold: 20,
 				loop: true,
 				onChange: function(){
-					console.log(this.currentSlide)
 					siemaDots(this);
 				},
 				onInit: function(){
@@ -200,13 +181,10 @@
 				threshold: 50,
 				loop: true,
 				onChange: function(){
-					console.log('current slide in change ' + this.currentSlide)
 					siemaDots(this);
 				},
 				onInit: function(){
 					this.addPagination();
-					// console.log(this)
-					// var _self = this;
 					siemaDots(this);
 				}
 			});
@@ -214,11 +192,18 @@
 		}
 		function siemaDots(slider) {
 			var calcSlide = 0;
-				if (this.currentSlide < 0){
+			// console.log(slider.innerElements.length);
+			// console.log('currentSlide= ' + slider.currentSlide);
+
+				if(slider.currentSlide === -1){
+					calcSlide = slider.innerElements.length - 1;
+				}
+				else if (slider.currentSlide < 0){
 					calcSlide = Math.abs(slider.currentSlide) * 2;
 				}else{
 					calcSlide = slider.currentSlide;
 				}
+			// console.log('calcSlide= ' + calcSlide);
 				var _self = slider;
 				var bullets = slider.selector.nextElementSibling.querySelectorAll('.siema-nav-button');
 				[].forEach.call(bullets, function(el, ind) {
@@ -237,10 +222,8 @@
 
 	// password show
 		if(document.querySelector('.eye-ico') !== null){
-			console.log('eye-ico!');
 			[].forEach.call(document.querySelectorAll('.eye-ico'), function(el) {
 				el.onclick = function(e) {
-					console.log('eye-ico click!');
 					var passInput = this.nextElementSibling;
 					this.classList.toggle('unblind');
 					passInput.getAttribute('type') === 'password' ?
@@ -257,12 +240,9 @@
 			for(var i=0; i < modalContent.length; i++){
 				modalContent[i].onclick = function(e) {
 					var target = e.target;
-					console.log(target);
 					if(target.classList.contains('forget-password-handling')){
 						e.preventDefault();
 						var linkTarget = target.getAttribute('id');
-						console.log(linkTarget);
-						console.log(document.querySelector('[data-target="'+linkTarget+'"]'));
 						
 						[].forEach.call(modalContent, function(el) {
 							if(el.dataset.target === linkTarget){
@@ -280,5 +260,98 @@
 
 		}
 	// END forget password toggle in sign-in
+
+	// lc-sekect
+		if(document.querySelector('.filter-select') !== null){
+			new lc_select('.filter-select', {
+				 wrap_width: '100%', 
+				 pre_placeh_opt: true,
+				 enable_search : false,
+				 on_change: function(new_value, target_field) {
+				 	console.log(new_value[0])
+				 	console.log(target_field)
+				 },
+				 on_init: function(currentSelect) {
+				 	console.log(currentSelect);
+				 },
+				 on_ddAppended: function(selectItem) {
+				 	var dropdown = document.getElementById('lc-select-dd');
+				 	
+				 	console.log(selectItem.closest('.hot-tours-filter__select'));
+
+				 	if(selectItem.getAttribute('name') === 'simple'){
+						dropdown
+				 			.querySelector('.lcslt-group-name')
+				 			.remove();
+				 	}
+				 	if(selectItem.getAttribute('name') === 'hotels'){
+					 		var options = document.querySelectorAll('.lcslt-dd-opt'),
+				 			selectedIndex = Array.prototype.indexOf.call(options, dropdown.querySelector('.lcslt-selected'));
+						
+						[].forEach.call(options, function(el, ind) {
+				 			if(ind <= selectedIndex){
+				 				el.querySelector('.lcslt-img').style.backgroundImage = 'url(img/icons-svg/star.svg)';
+				 			}
+						});
+				 	}
+				 	if(screen.width < 768 && selectItem.closest('.hot-tours-filter__select') !== null){
+
+					 	console.log(document.querySelector('.hot-tours-filter__container')
+					 			.clientWidth + 'px');
+
+					 	var container = document.querySelector('.hot-tours-filter__container');
+
+					 	setTimeout(function() {
+					 		var width = container.clientWidth,
+			 				left = container.getBoundingClientRect().left,
+				 			y_pos = parseInt(container.getBoundingClientRect().top) + container.clientHeight + parseInt(window.pageYOffset, 10);
+
+				 			dropdown.setAttribute('style', 'width:'+ width +'px; top:'+ y_pos +'px; left: '+ left +'px;');
+					 	}, 20)
+				 	}
+				 }
+			});
+		}
+	// END lc-sekect
+
+	// tabs
+	if(document.querySelector('._tabs') !== null){
+		tabsHandler(document.querySelector('._tabs')).init();
+	}
+	// END tabs
+
+	// flatpickr
+		if(document.querySelector('.date-input') !== null){
+			
+			flatpickr("#date-start", {
+			  // "inline": true,
+			  "monthSelectorType": "static",
+			  "locale": "ru",
+			  "disableMobile": true,
+			  "dateFormat": "y-m-d",
+			  "minDate": new Date(),
+			  "defaultDate": new Date()
+			});
+			flatpickr("#date-end", {
+			  // "inline": true,
+			  "monthSelectorType": "static",
+			  "locale": "ru",
+			  "disableMobile": true,
+			  "dateFormat": "y-m-d",
+			  "minDate": new Date(),
+			  "defaultDate": new Date().setDate(new Date().getDate() + 7)
+			});
+		}
+
+		var charterCalendar = flatpickr("#date-charter", {
+		  "monthSelectorType": "static",
+		  "locale": "ru",
+		  "minDate": new Date(),
+		  "mode": "range",
+		  "defaultDate": ["2021-08-10", "2021-08-20"]
+		});
+
+
+	// END flatpickr
 
 })();

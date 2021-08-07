@@ -92,16 +92,507 @@
           </div>
         </header>
         <main class="main-content">
-          <div class="main-visual main-visual--short _fit"><picture><source srcset="img/bg_service-2.webp" type="image/webp"><img data-src="img/bg_service-2.jpg" alt="alt" class="_fit-img lazyload"></picture>
+          <div class="main-visual main-visual--short _fit"><img data-src="img/bg_service-2.jpg" alt="alt" class="_fit-img lazyload">
           </div>
-          <section class="page-sect">
+          <section class="page-sect hot-tourse">
             <div class="wrapper">
-              <h1 class="accent">Гарячі туриг</h1>
+              <h1 class="accent">Гарячі тури</h1>
             </div>
+            <section class="hot-tours-filter">
+              <div class="wrapper hot-tours-filter__filters">
+                <div class="hot-tours-filter__container fl">
+                  <div class="hot-tours-filter__select contries-groups">
+                    <div class="hot-tours-filter__icon">
+                          <svg class="icon icon-baloon ">
+                            <use xlink:href="img/icons-svg/symbol/sprite.svg#baloon"></use>
+                          </svg>
+                    </div>
+                    <div class="hot-tours-filter__label">Куда</div>
+                    <select name="simple" data-placeholder="" class="filter-select">
+                      <optgroup label="...">
+                        <option value="all" selected>Все страны</option>
+                      </optgroup>
+                      <optgroup label="Популярные">
+                        <option value="1">Египет</option>
+                        <option value="2">Турция</option>
+                      </optgroup>
+                      <optgroup label="Другие направления">
+                        <option value="3">Албания</option>
+                        <option value="4">Болгария</option>
+                        <option value="5">Грузия</option>
+                        <option value="6">Греция</option>
+                        <option value="7">Доминикана republic</option>
+                        <option value="8">Иордания</option>
+                        <option value="9">Индонезия</option>
+                        <option value="10">Испания</option>
+                        <option value="11">Италия</option>
+                        <option value="12">Израиль</option>
+                        <option value="13">Израиль</option>
+                        <option value="14">Индия</option>
+                        <option value="15">Куба</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                  <div class="hot-tours-filter__select">
+                    <div class="hot-tours-filter__icon">
+                          <svg class="icon icon-hotel ">
+                            <use xlink:href="img/icons-svg/symbol/sprite.svg#hotel"></use>
+                          </svg>
+                    </div>
+                    <div class="hot-tours-filter__label">Отель</div>
+                    <select name="hotels" data-placeholder="" class="filter-select">
+                      <option value="1" data-image="img/icons-svg/star-gray.svg">1 и более</option>
+                      <option value="2" data-image="img/icons-svg/star-gray.svg">2 и более</option>
+                      <option value="3" data-image="img/icons-svg/star-gray.svg">3 и более</option>
+                      <option value="4" selected data-image="img/icons-svg/star-gray.svg">4 и более</option>
+                      <option value="5" data-image="img/icons-svg/star-gray.svg">5 звезд</option>
+                    </select>
+                  </div>
+                  <div class="hot-tours-filter__select">
+                    <div class="hot-tours-filter__icon">
+                          <svg class="icon icon-airplane ">
+                            <use xlink:href="img/icons-svg/symbol/sprite.svg#airplane"></use>
+                          </svg>
+                    </div>
+                    <div class="hot-tours-filter__label">Вылет</div>
+                    <select name="cities" data-placeholder="" class="filter-select">
+                      <option value="all" selected>Все города</option>
+                      <option value="1">Одесса</option>
+                      <option value="2">Запорожье</option>
+                      <option value="3">Львов</option>
+                      <option value="4">Днепр</option>
+                    </select>
+                  </div>
+                  <div class="hot-tours-filter__select">
+                    <div class="hot-tours-filter__icon">
+                          <svg class="icon icon-moon ">
+                            <use xlink:href="img/icons-svg/symbol/sprite.svg#moon"></use>
+                          </svg>
+                    </div>
+                    <div class="hot-tours-filter__label">Ночей</div>
+                    <select name="dates" data-placeholder="" class="filter-select">
+                      <option value="1-3">1-3</option>
+                      <option value="4-6">4-6</option>
+                      <option value="7-8" selected>7-8</option>
+                      <option value="9-12">9-12</option>
+                    </select>
+                  </div>
+                  <div class="hot-tours-filter__select">
+                    <div class="hot-tours-filter__icon">
+                          <svg class="icon icon-food ">
+                            <use xlink:href="img/icons-svg/symbol/sprite.svg#food"></use>
+                          </svg>
+                    </div>
+                    <div class="hot-tours-filter__label">Питание</div>
+                    <select name="food" data-placeholder="" class="filter-select">
+                      <option value="Любое" selected>Любое</option>
+                      <option value="Ультра всё включено">Ультра всё включено</option>
+                      <option value="Всё включено и лучше">Всё включено и лучше</option>
+                      <option value="Полный пансион и лучше">Полный пансион и лучше</option>
+                      <option value="Завтрак и ужин и лучше">Завтрак и ужин и лучше</option>
+                      <option value="Завтрак и лучше">Завтрак и лучше</option>
+                      <option value="Без питания и лучше">Без питания и лучше</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+          <section class="hot-tours-results">
             <div class="wrapper">
-              <div style="outline: 1px solid" class="hot-tourse__content">
-                <h2 class="text-center">Гарячi тури</h2>
-                <h1>Hot tourse content</h1>
+              <div class="result-cards"><a href="#" class="result-card">
+                  <div class="result-card__visual">
+                    <div class="result-card__header photo-caption blur">
+                      <div class="photo-caption__title">
+                            <svg class="icon icon-baloon ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#baloon"></use>
+                            </svg><span class="result-card__name">Болгария, Обзор</span>
+                      </div>
+                    </div>
+                    <div class="result-card__img _fit">
+                      <picture>
+                        <source srcset="img/hot-tours-results/1.webp" type="image/webp"><img src="img/hot-tours-results/1.jpg" alt="alt" class="lazyload _fit-img">
+                      </picture>
+                    </div>
+                    <div class="result-card__price photo-caption blur">
+                      <div class="photo-caption__title">3 782<span class="result-card__currency">грн</span></div>
+                    </div>
+                  </div>
+                  <div class="result-card__bottom">
+                    <div class="result-card__hotel">
+                      <div class="result-card__hotel-name">Ivana</div>
+                      <div class="result-card__hotel-status"><span class="result-card__hotel-star">4</span>
+                            <svg class="icon icon-star ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#star"></use>
+                            </svg>
+                      </div>
+                    </div>
+                    <div class="result-card__info">
+                      <div class="result-card__column">
+                            <svg class="icon icon-car ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#car"></use>
+                            </svg>Выезд <span>11.06.21</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-hotel ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#hotel"></use>
+                            </svg>Номер <span>Standart</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-moon ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#moon"></use>
+                            </svg>Ночей в туре <span>7</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-airplane ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#airplane"></use>
+                            </svg>Вылет <span>Херсон</span>
+                      </div>
+                    </div>
+                  </div></a><a href="#" class="result-card">
+                  <div class="result-card__visual">
+                    <div class="result-card__header photo-caption blur">
+                      <div class="photo-caption__title">
+                            <svg class="icon icon-baloon ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#baloon"></use>
+                            </svg><span class="result-card__name">Болгария, Солнечный Берег</span>
+                      </div>
+                    </div>
+                    <div class="result-card__img _fit">
+                      <picture>
+                        <source srcset="img/hot-tours-results/2.webp" type="image/webp"><img src="img/hot-tours-results/2.jpg" alt="alt" class="lazyload _fit-img">
+                      </picture>
+                    </div>
+                    <div class="result-card__price photo-caption blur">
+                      <div class="photo-caption__title">5 522<span class="result-card__currency">грн</span></div>
+                    </div>
+                  </div>
+                  <div class="result-card__bottom">
+                    <div class="result-card__hotel">
+                      <div class="result-card__hotel-name">Forum</div>
+                      <div class="result-card__hotel-status"><span class="result-card__hotel-star">4</span>
+                            <svg class="icon icon-star ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#star"></use>
+                            </svg>
+                      </div>
+                    </div>
+                    <div class="result-card__info">
+                      <div class="result-card__column">
+                            <svg class="icon icon-car ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#car"></use>
+                            </svg>Выезд <span>11.06.21</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-hotel ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#hotel"></use>
+                            </svg>Номер <span>Standart</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-moon ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#moon"></use>
+                            </svg>Ночей в туре <span>7</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-airplane ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#airplane"></use>
+                            </svg>Вылет <span>Херсон</span>
+                      </div>
+                    </div>
+                  </div></a><a href="#" class="result-card">
+                  <div class="result-card__visual">
+                    <div class="result-card__header photo-caption blur">
+                      <div class="photo-caption__title">
+                            <svg class="icon icon-baloon ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#baloon"></use>
+                            </svg><span class="result-card__name">Украина, Львов</span>
+                      </div>
+                    </div>
+                    <div class="result-card__img _fit">
+                      <picture>
+                        <source srcset="img/hot-tours-results/3.webp" type="image/webp"><img src="img/hot-tours-results/3.jpg" alt="alt" class="lazyload _fit-img">
+                      </picture>
+                    </div>
+                    <div class="result-card__price photo-caption blur">
+                      <div class="photo-caption__title">5 610<span class="result-card__currency">грн</span></div>
+                    </div>
+                  </div>
+                  <div class="result-card__bottom">
+                    <div class="result-card__hotel">
+                      <div class="result-card__hotel-name">Otaman Resort</div>
+                      <div class="result-card__hotel-status"><span class="result-card__hotel-star">4</span>
+                            <svg class="icon icon-star ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#star"></use>
+                            </svg>
+                      </div>
+                    </div>
+                    <div class="result-card__info">
+                      <div class="result-card__column">
+                            <svg class="icon icon-car ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#car"></use>
+                            </svg>Выезд <span>11.06.21</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-hotel ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#hotel"></use>
+                            </svg>Номер <span>Standart</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-moon ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#moon"></use>
+                            </svg>Ночей в туре <span>7</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-airplane ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#airplane"></use>
+                            </svg>Вылет <span>Херсон</span>
+                      </div>
+                    </div>
+                  </div></a><a href="#" class="result-card">
+                  <div class="result-card__visual">
+                    <div class="result-card__header photo-caption blur">
+                      <div class="photo-caption__title">
+                            <svg class="icon icon-baloon ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#baloon"></use>
+                            </svg><span class="result-card__name">Турция, Аланья</span>
+                      </div>
+                    </div>
+                    <div class="result-card__img _fit">
+                      <picture>
+                        <source srcset="img/hot-tours-results/4.webp" type="image/webp"><img src="img/hot-tours-results/4.jpg" alt="alt" class="lazyload _fit-img">
+                      </picture>
+                    </div>
+                    <div class="result-card__price photo-caption blur">
+                      <div class="photo-caption__title">7 031<span class="result-card__currency">грн</span></div>
+                    </div>
+                  </div>
+                  <div class="result-card__bottom">
+                    <div class="result-card__hotel">
+                      <div class="result-card__hotel-name">Otaman Resort</div>
+                      <div class="result-card__hotel-status"><span class="result-card__hotel-star">4</span>
+                            <svg class="icon icon-star ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#star"></use>
+                            </svg>
+                      </div>
+                    </div>
+                    <div class="result-card__info">
+                      <div class="result-card__column">
+                            <svg class="icon icon-car ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#car"></use>
+                            </svg>Выезд <span>11.06.21</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-hotel ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#hotel"></use>
+                            </svg>Номер <span>Standart</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-moon ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#moon"></use>
+                            </svg>Ночей в туре <span>7</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-airplane ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#airplane"></use>
+                            </svg>Вылет <span>Херсон</span>
+                      </div>
+                    </div>
+                  </div></a><a href="#" class="result-card">
+                  <div class="result-card__visual">
+                    <div class="result-card__header photo-caption blur">
+                      <div class="photo-caption__title">
+                            <svg class="icon icon-baloon ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#baloon"></use>
+                            </svg><span class="result-card__name">Египет, Шарм Эль Шейх</span>
+                      </div>
+                    </div>
+                    <div class="result-card__img _fit">
+                      <picture>
+                        <source srcset="img/hot-tours-results/5.webp" type="image/webp"><img src="img/hot-tours-results/5.jpg" alt="alt" class="lazyload _fit-img">
+                      </picture>
+                    </div>
+                    <div class="result-card__price photo-caption blur">
+                      <div class="photo-caption__title">8 529<span class="result-card__currency">грн</span></div>
+                    </div>
+                  </div>
+                  <div class="result-card__bottom">
+                    <div class="result-card__hotel">
+                      <div class="result-card__hotel-name">Sharming Inn</div>
+                      <div class="result-card__hotel-status"><span class="result-card__hotel-star">4</span>
+                            <svg class="icon icon-star ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#star"></use>
+                            </svg>
+                      </div>
+                    </div>
+                    <div class="result-card__info">
+                      <div class="result-card__column">
+                            <svg class="icon icon-car ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#car"></use>
+                            </svg>Выезд <span>11.06.21</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-hotel ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#hotel"></use>
+                            </svg>Номер <span>Standart</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-moon ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#moon"></use>
+                            </svg>Ночей в туре <span>7</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-airplane ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#airplane"></use>
+                            </svg>Вылет <span>Херсон</span>
+                      </div>
+                    </div>
+                  </div></a><a href="#" class="result-card">
+                  <div class="result-card__visual">
+                    <div class="result-card__header photo-caption blur">
+                      <div class="photo-caption__title">
+                            <svg class="icon icon-baloon ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#baloon"></use>
+                            </svg><span class="result-card__name">Грузия, Тбилиси</span>
+                      </div>
+                    </div>
+                    <div class="result-card__img _fit">
+                      <picture>
+                        <source srcset="img/hot-tours-results/6.webp" type="image/webp"><img src="img/hot-tours-results/6.jpg" alt="alt" class="lazyload _fit-img">
+                      </picture>
+                    </div>
+                    <div class="result-card__price photo-caption blur">
+                      <div class="photo-caption__title">9 400<span class="result-card__currency">грн</span></div>
+                    </div>
+                  </div>
+                  <div class="result-card__bottom">
+                    <div class="result-card__hotel">
+                      <div class="result-card__hotel-name">Hotel Liberty Theatre</div>
+                      <div class="result-card__hotel-status"><span class="result-card__hotel-star">4</span>
+                            <svg class="icon icon-star ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#star"></use>
+                            </svg>
+                      </div>
+                    </div>
+                    <div class="result-card__info">
+                      <div class="result-card__column">
+                            <svg class="icon icon-car ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#car"></use>
+                            </svg>Выезд <span>11.06.21</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-hotel ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#hotel"></use>
+                            </svg>Номер <span>Standart</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-moon ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#moon"></use>
+                            </svg>Ночей в туре <span>7</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-airplane ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#airplane"></use>
+                            </svg>Вылет <span>Херсон</span>
+                      </div>
+                    </div>
+                  </div></a><a href="#" class="result-card">
+                  <div class="result-card__visual">
+                    <div class="result-card__header photo-caption blur">
+                      <div class="photo-caption__title">
+                            <svg class="icon icon-baloon ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#baloon"></use>
+                            </svg><span class="result-card__name">Черногория, Будва</span>
+                      </div>
+                    </div>
+                    <div class="result-card__img _fit">
+                      <picture>
+                        <source srcset="img/hot-tours-results/7.webp" type="image/webp"><img src="img/hot-tours-results/7.jpg" alt="alt" class="lazyload _fit-img">
+                      </picture>
+                    </div>
+                    <div class="result-card__price photo-caption blur">
+                      <div class="photo-caption__title">10 247<span class="result-card__currency">грн</span></div>
+                    </div>
+                  </div>
+                  <div class="result-card__bottom">
+                    <div class="result-card__hotel">
+                      <div class="result-card__hotel-name">Apartment Ksenia</div>
+                      <div class="result-card__hotel-status"><span class="result-card__hotel-star">4</span>
+                            <svg class="icon icon-star ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#star"></use>
+                            </svg>
+                      </div>
+                    </div>
+                    <div class="result-card__info">
+                      <div class="result-card__column">
+                            <svg class="icon icon-car ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#car"></use>
+                            </svg>Выезд <span>11.06.21</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-hotel ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#hotel"></use>
+                            </svg>Номер <span>Standart</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-moon ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#moon"></use>
+                            </svg>Ночей в туре <span>7</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-airplane ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#airplane"></use>
+                            </svg>Вылет <span>Херсон</span>
+                      </div>
+                    </div>
+                  </div></a><a href="#" class="result-card">
+                  <div class="result-card__visual">
+                    <div class="result-card__header photo-caption blur">
+                      <div class="photo-caption__title">
+                            <svg class="icon icon-baloon ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#baloon"></use>
+                            </svg><span class="result-card__name">ОАЭ, Дубаи</span>
+                      </div>
+                    </div>
+                    <div class="result-card__img _fit">
+                      <picture>
+                        <source srcset="img/hot-tours-results/8.webp" type="image/webp"><img src="img/hot-tours-results/8.jpg" alt="alt" class="lazyload _fit-img">
+                      </picture>
+                    </div>
+                    <div class="result-card__price photo-caption blur">
+                      <div class="photo-caption__title">12 174<span class="result-card__currency">грн</span></div>
+                    </div>
+                  </div>
+                  <div class="result-card__bottom">
+                    <div class="result-card__hotel">
+                      <div class="result-card__hotel-name">Fortune Grand Hotel, Deira</div>
+                      <div class="result-card__hotel-status"><span class="result-card__hotel-star">5</span>
+                            <svg class="icon icon-star ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#star"></use>
+                            </svg>
+                      </div>
+                    </div>
+                    <div class="result-card__info">
+                      <div class="result-card__column">
+                            <svg class="icon icon-car ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#car"></use>
+                            </svg>Выезд <span>11.06.21</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-hotel ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#hotel"></use>
+                            </svg>Номер <span>Standart</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-moon ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#moon"></use>
+                            </svg>Ночей в туре <span>7</span>
+                      </div>
+                      <div class="result-card__column">
+                            <svg class="icon icon-airplane ">
+                              <use xlink:href="img/icons-svg/symbol/sprite.svg#airplane"></use>
+                            </svg>Вылет <span>Херсон</span>
+                      </div>
+                    </div>
+                  </div></a>
               </div>
             </div>
           </section>
@@ -603,6 +1094,7 @@
       <script src="js/libs/fstdropdown/fstdropdown.min.js"></script>
       <script src="js/libs/dynamic-adaptive/da.min.js"></script>
       <script src="js/libs/accordion/vanilla-accordion.js"></script>
+      <script src="js/libs/lc-select/lc_select.js"></script>
       <script src="js/common.js"></script>
     </div>
   </body>
