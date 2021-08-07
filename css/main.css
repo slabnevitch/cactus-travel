@@ -5554,13 +5554,6 @@ textarea.input {
     width: 100%;
   }
 
-  .tours-filters__selects--charter .button,
-  .tours-filters__selects--charter .contacts__col .contacts-row--shedule,
-  .contacts__col .tours-filters__selects--charter .contacts-row--shedule {
-    width: 100%;
-    margin: 0;
-  }
-
   .footer__column .button,
   .footer__column .contacts__col .contacts-row--shedule,
   .contacts__col .footer__column .contacts-row--shedule {
@@ -5780,6 +5773,13 @@ textarea.input {
     margin-left: 0;
     margin-right: 0;
     max-width: none;
+  }
+
+  .tours-filters__selects--charter .button,
+  .tours-filters__selects--charter .contacts__col .contacts-row--shedule,
+  .contacts__col .tours-filters__selects--charter .contacts-row--shedule {
+    width: 100%;
+    margin: 0;
   }
 
   .cactus-form__send {

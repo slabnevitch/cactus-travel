@@ -176,7 +176,7 @@
 			    1370: 4
 			  },
 				// startIndex: 0,
-				draggable: false,
+				draggable: true,
 				multipleDrag: false,
 				threshold: 50,
 				loop: true,
