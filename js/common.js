@@ -334,7 +334,7 @@
 			    },
 			  };
 			
-			flatpickr(".date-start", {
+			flatpickr("#date-start", {
 			  // "inline": true,
 			  "monthSelectorType": "static",
 			  "locale": localeRU,
@@ -343,7 +343,7 @@
 			  "minDate": new Date(),
 			  "defaultDate": new Date()
 			});
-			flatpickr(".date-end", {
+			flatpickr("#date-end", {
 			  // "inline": true,
 			  "monthSelectorType": "static",
 			  "locale": localeRU,
