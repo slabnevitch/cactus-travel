@@ -322,36 +322,44 @@
 
 	// flatpickr
 		if(document.querySelector('.date-input') !== null){
+			var localeRU = {
+			    firstDayOfWeek: 1,
+			    weekdays: {
+			      shorthand: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+			      longhand: ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'],         
+			    }, 
+			    months: {
+			      shorthand: ['Янв', 'Фев', 'Март', 'Апр', 'Май', 'Июнь', 'Июль', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+			      longhand: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+			    },
+			  };
 			
-			flatpickr("#date-start", {
+			flatpickr(".date-start", {
 			  // "inline": true,
 			  "monthSelectorType": "static",
-			  "locale": "ru",
+			  "locale": localeRU,
 			  "disableMobile": true,
 			  "dateFormat": "y-m-d",
 			  "minDate": new Date(),
 			  "defaultDate": new Date()
 			});
-			flatpickr("#date-end", {
+			flatpickr(".date-end", {
 			  // "inline": true,
 			  "monthSelectorType": "static",
-			  "locale": "ru",
+			  "locale": localeRU,
 			  "disableMobile": true,
 			  "dateFormat": "y-m-d",
 			  "minDate": new Date(),
 			  "defaultDate": new Date().setDate(new Date().getDate() + 7)
 			});
+			
+			var charterCalendar = flatpickr("#date-charter", {
+			  "monthSelectorType": "static",
+			  "locale": localeRU,
+			  "minDate": new Date(),
+			  "mode": "range",
+			  "defaultDate": ["2021-08-10", "2021-08-20"]
+			});
 		}
-
-		var charterCalendar = flatpickr("#date-charter", {
-		  "monthSelectorType": "static",
-		  "locale": "ru",
-		  "minDate": new Date(),
-		  "mode": "range",
-		  "defaultDate": ["2021-08-10", "2021-08-20"]
-		});
-
-
 	// END flatpickr
-
 })();
