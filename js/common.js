@@ -192,8 +192,6 @@
 		}
 		function siemaDots(slider) {
 			var calcSlide = 0;
-			// console.log(slider.innerElements.length);
-			// console.log('currentSlide= ' + slider.currentSlide);
 
 				if(slider.currentSlide === -1){
 					calcSlide = slider.innerElements.length - 1;
@@ -203,7 +201,7 @@
 				}else{
 					calcSlide = slider.currentSlide;
 				}
-			// console.log('calcSlide= ' + calcSlide);
+
 				var _self = slider;
 				var bullets = slider.selector.nextElementSibling.querySelectorAll('.siema-nav-button');
 				[].forEach.call(bullets, function(el, ind) {
@@ -268,16 +266,13 @@
 				 pre_placeh_opt: true,
 				 enable_search : false,
 				 on_change: function(new_value, target_field) {
-				 	console.log(new_value[0])
-				 	console.log(target_field)
+
 				 },
 				 on_init: function(currentSelect) {
-				 	console.log(currentSelect);
+
 				 },
 				 on_ddAppended: function(selectItem) {
 				 	var dropdown = document.getElementById('lc-select-dd');
-				 	
-				 	console.log(selectItem.closest('.hot-tours-filter__select'));
 
 				 	if(selectItem.getAttribute('name') === 'simple'){
 						dropdown
@@ -295,9 +290,6 @@
 						});
 				 	}
 				 	if(screen.width < 768 && selectItem.closest('.hot-tours-filter__select') !== null){
-
-					 	console.log(document.querySelector('.hot-tours-filter__container')
-					 			.clientWidth + 'px');
 
 					 	var container = document.querySelector('.hot-tours-filter__container');
 
@@ -334,7 +326,7 @@
 			    },
 			  };
 			
-			flatpickr("#date-start", {
+			flatpickr(".date-start", {
 			  // "inline": true,
 			  "monthSelectorType": "static",
 			  "locale": localeRU,
@@ -343,7 +335,7 @@
 			  "minDate": new Date(),
 			  "defaultDate": new Date()
 			});
-			flatpickr("#date-end", {
+			flatpickr(".date-end", {
 			  // "inline": true,
 			  "monthSelectorType": "static",
 			  "locale": localeRU,
@@ -362,4 +354,5 @@
 			});
 		}
 	// END flatpickr
+
 })();

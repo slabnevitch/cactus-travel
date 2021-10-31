@@ -8,9 +8,6 @@ var tabsHandler = function(tabsContaner){
     });
   }
   clickHandler = function(e){
-    console.log('click!')
-    console.log(e.target)
-
     e.preventDefault();
     var target = e.target.closest('.tab');
     for(var i=0; i<tabs.length; i++){
